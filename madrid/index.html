@@ -3,133 +3,51 @@
   <head>
     <title>Editable Table</title>
     <link rel="stylesheet" href="edit-table.css">
-    <script defer src="edit-table.js"></script>    
+    <script defer src="edit-table.js"></script>
+    <style>
+		.column {
+			float: left;
+			width: 100%;
+		}
+		/* Clear floats after the columns */
+		.row:after {
+			content: "";
+			display: table;
+			clear: both;
+		}
+    </style>
   </head>
   <body>
-	<h1 style="color: green">De agricultor a consumidor</h1>
-	<h3>Listado de Vendedores</h3>	  
-	<div>
-      <object
-        data='LISTA DE VENDEDORES.pdf'
-        type="application/pdf"
-        width="1200"
-        height="678"
-      >
-      
-		<iframe
-          src='LISTA DE VENDEDORES.pdf'
-          width="1200"
-          height="678"
-        >
-        <p>Su navegador no soporta PDFs</p>
-        </iframe>
-      </object>
-    </div>
-    
-    <div>
-		<table class="editable" style="display: inline-block; border: 30px solid; float: left; ">
-			<h1>LISTA DE COMPRADORES</h1>			
-			<h3><br></h3>		
-		 
-		  <thead>
-			<tr>
-			  <th>Nombre</th>
-			  <th>Localidad</th>
-			  
-			</tr>
-		  </thead>
+	<div class="row">
+			<div class="column">
+				<h1 style="color: green">De agricultor a consumidor</h1>
+				<h3>Listado de Vendedores</h3>
 
-		  
-		  <tbody>
-			<tr>
-			  <td>Isabel G</td>
-			  <td>Hortaleza</td>
-			  
-			</tr>
-			<tr>
-			  <td>Charo</td>
-			  <td>Hortaleza y N-1</td>
-			  
-			</tr>
-			<tr>
-			  <td>Juan</td>
-			  <td>Simancas</td>
-			  
-			</tr>
-			<tr>
-			  <td>Paula</td>
-			  <td>Sierra Norte</td>
-			  
-			</tr>
-			<tr>
-			  <td>Mar</td>
-			  <td>Coslada</td>
-			  
-			</tr>
-			<tr>
-			  <td>Cris</td>
-			  <td>Campo Real</td>
-			  
-			</tr>
-			<tr>
-			  <td>Alberto</td>
-			  <td>El Escorial</td>
-			  
-			</tr>
-			<tr>
-			  <td>Elena</td>
-			  <td>Méndez Alvaro</td>
-			  
-			</tr>
-			<tr>
-			  <td>Paula</td>
-			  <td>Sierra Norte</td>
-			  
-			</tr>        
-			<tr>
-			  <td>Raquel</td>
-			  <td>Madrid centro</td>
-			  
-			</tr>
-			<tr>
-			  <td>Isable Galache</td>
-			  <td>Hortaleza</td>
-			  
-			</tr>
-			<tr>
-			  <td>Meyrous</td>
-			  <td>Barrio de El Pilar</td>
-			  
-			</tr>
-			<tr>
-			  <td>Sonia</td>
-			  <td>Ciudad Lineal / San Blas</td>
-			  
-			</tr>
-			<tr>
-			  <td>Rocio L. M.</td>
-			  <td>Hortaleza</td>
-			  
-			</tr>
-			<tr>
-			  <td>Andres</td>
-			  <td>Usera / Carabanchel</td>
-			  
-			</tr>
-			<tr>
-			  <td>Toñi(unruly)</td>
-			  <td>Moratalaz</td>
-			  
-			</tr>
-			<tr>
-			  <td>Charo</td>
-			  <td>Madrid</td>
-			  
-			</tr>
-			
-		  </tbody>	
-		</table>					
+				<div>
+					<object
+						data='LISTA DE VENDEDORES.pdf'
+						type="application/pdf"
+						width="1400"
+						height="578"
+					>
+
+						<iframe
+						src='LISTA DE VENDEDORES.pdf'
+						width="1400"
+						height="578"
+						>
+						<p>Su navegador no soporta PDFs</p>
+						</iframe>
+					</object>
+				</div>
+			</div>
+			<div>&nbsp;</div>
+			<div class="column">
+				<h3>Listado de Compradores</h3>
+				<iframe src="compradores.html" seamless></iframe>
+			</div>
 	</div>
+
   </body>
 </html>
 
