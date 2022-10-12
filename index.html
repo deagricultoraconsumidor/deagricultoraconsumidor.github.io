@@ -1,53 +1,33 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Editable Table</title>
-    <link rel="stylesheet" href="edit-table.css">
-    <script defer src="edit-table.js"></script>
-    <style>
-		.column {
-			float: left;
-			width: 100%;
-		}
-		/* Clear floats after the columns */
-		.row:after {
-			content: "";
-			display: table;
-			clear: both;
-		}
-    </style>
+    <meta charset="utf-8">
+    <title>De agricultor a consumidor</title>
   </head>
+
   <body>
-	<div class="row">
-			<div class="column">
-				<h1 style="color: green">De agricultor a consumidor</h1>
-				<h3>Listado de Vendedores</h3>
 
-				<div>
-					<object
-						data='LISTA DE VENDEDORES.pdf'
-						type="application/pdf"
-						width="1400"
-						height="578"
-					>
-
-						<iframe
-						src='LISTA DE VENDEDORES.pdf'
-						width="1400"
-						height="578"
-						>
-						<p>Su navegador no soporta PDFs</p>
-						</iframe>
-					</object>
-				</div>
-			</div>
-			<div>&nbsp;</div>
-			<div class="column">
-				<h3>Listado de Compradores</h3>
-				<iframe src="compradores.html" seamless></iframe>
-			</div>
-	</div>
+  <center>
+	<h1 style="color: green">De agricultor a consumidor</h1>
+	<h3>Listado de Vendedores</h3>	  
+	<div>
+      <object
+        data='LISTA DE VENDEDORES.pdf'
+        type="application/pdf"
+        width="1200"
+        height="678"
+      >
+      
+		<iframe
+          src='LISTA DE VENDEDORES.pdf'
+          width="1200"
+          height="678"
+        >
+        <p>Su navegador no soporta PDFs</p>
+        </iframe>
+      </object>
+    </div>
+  </center>
 
   </body>
 </html>
-
